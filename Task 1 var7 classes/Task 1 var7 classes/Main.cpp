@@ -1,25 +1,27 @@
-#include <iostream>
+п»ї#include <iostream>
+#include <string>
+
 
 class Point {
 private:
 	unsigned int x;
 	unsigned int y;
 public:
-	Point(unsigned int x, unsigned int y); // конструктор с двумя параметрами
+	Point(unsigned int x, unsigned int y); // РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ СЃ РґРІСѓРјСЏ РїР°СЂР°РјРµС‚СЂР°РјРё
 	Point(); 
-	unsigned int getX() const; // метод получения значения поля x
-	unsigned int getY() const; // метод получения значения поля y
+	unsigned int getX() const; // РјРµС‚РѕРґ РїРѕР»СѓС‡РµРЅРёСЏ Р·РЅР°С‡РµРЅРёСЏ РїРѕР»СЏ x
+	unsigned int getY() const; // РјРµС‚РѕРґ РїРѕР»СѓС‡РµРЅРёСЏ Р·РЅР°С‡РµРЅРёСЏ РїРѕР»СЏ y
 	void setX(unsigned int x); 
 	void setY(unsigned int y); 
 	static Point readFromStream(std::istream& stream); 
-	std::string toString() const; // метод преобразования в строку
+	std::string toString() const; // РјРµС‚РѕРґ РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёСЏ РІ СЃС‚СЂРѕРєСѓ
 	bool operator==(const Point& other) const; 
 	bool operator!=(const Point& other) const; 
 	Point operator+(const Point& other) const; 
 	Point operator-(const Point& other) const; 
 	Point operator+(unsigned int value) const; 
 	Point operator-(unsigned int value) const;
-	friend std::ostream& operator«(std::ostream& stream, const Point& point);
+	friend std::ostream& operatorВ«(std::ostream& stream, const Point& point);
 };
 
 
@@ -32,5 +34,5 @@ public:
 	Rectangle(Point topLeft, Point bottomRight); 
 	Rectangle(unsigned int x1, unsigned int y1, unsigned int x2, unsigned int y2); 
 	static Rectangle readFromStream(std::istream& stream); 
-	std::string toString() const; // метод преобразования в строку
+	std::string toString() const; // РјРµС‚РѕРґ РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёСЏ РІ СЃС‚СЂРѕРєСѓ
 };
