@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <string>
 class Point {
 private:
@@ -6,17 +6,17 @@ private:
 	unsigned int y;
 public:
 	Point(const unsigned int x=0, const unsigned int y=0); 
-	// конструктор с двумя параметрами
+	// РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ СЃ РґРІСѓРјСЏ РїР°СЂР°РјРµС‚СЂР°РјРё
 	unsigned int getX() const; 
-	// метод получения значения поля x
+	// РјРµС‚РѕРґ РїРѕР»СѓС‡РµРЅРёСЏ Р·РЅР°С‡РµРЅРёСЏ РїРѕР»СЏ x
 	unsigned int getY() const;
-	// метод получения значения поля y
+	// РјРµС‚РѕРґ РїРѕР»СѓС‡РµРЅРёСЏ Р·РЅР°С‡РµРЅРёСЏ РїРѕР»СЏ y
 	void setX(unsigned int x);
-	// метод задания значения поля x
+	// РјРµС‚РѕРґ Р·Р°РґР°РЅРёСЏ Р·РЅР°С‡РµРЅРёСЏ РїРѕР»СЏ x
 	void setY(unsigned int y);
-	// метод задания значения поля y
+	// РјРµС‚РѕРґ Р·Р°РґР°РЅРёСЏ Р·РЅР°С‡РµРЅРёСЏ РїРѕР»СЏ y
 	std::string toString() const;
-	// метод преобразования в строку
-	friend std::ostream& operator«(std::ostream& stream, const Point& point);
-	// переопределенный оператор вывода в поток
+	// РјРµС‚РѕРґ РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёСЏ РІ СЃС‚СЂРѕРєСѓ
+	friend std::ostream& operatorВ«(std::ostream& stream, const Point& point);
+	// РїРµСЂРµРѕРїСЂРµРґРµР»РµРЅРЅС‹Р№ РѕРїРµСЂР°С‚РѕСЂ РІС‹РІРѕРґР° РІ РїРѕС‚РѕРє
 };
