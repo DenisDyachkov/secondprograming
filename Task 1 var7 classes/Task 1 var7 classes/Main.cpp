@@ -21,7 +21,7 @@ public:
 	Point operator-(const Point& other) const; 
 	Point operator+(unsigned int value) const; 
 	Point operator-(unsigned int value) const;
-	friend std::ostream& operator«(std::ostream& stream, const Point& point);
+	friend std::ostream& operator<<(std::ostream& stream, const Point& point);
 };
 
 
