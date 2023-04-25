@@ -10,8 +10,8 @@ namespace miit::figure
 	{
 	public:
 		Point(const double user_x, const double user_y);
-		const double get_x() const;
-		const double get_y() const;
+		double get_x() const;
+	    double get_y() const;
 		friend std::ostream& operator<<(std::ostream& os, Point& point);
 
 	private:
