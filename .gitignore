@@ -1,52 +1,39 @@
-# Created by https://www.toptal.com/developers/gitignore/api/windows,visualstudio,microsoftoffice
-# Edit at https://www.toptal.com/developers/gitignore?templates=windows,visualstudio,microsoftoffice
+# Created by https://www.toptal.com/developers/gitignore/api/c++,visualstudio
+# Edit at https://www.toptal.com/developers/gitignore?templates=c++,visualstudio
 
-### MicrosoftOffice ###
-*.tmp
+### C++ ###
+# Prerequisites
+*.d
 
-# Word temporary
-~$*.doc*
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
 
-# Word Auto Backup File
-Backup of *.doc*
+# Precompiled Headers
+*.gch
+*.pch
 
-# Excel temporary
-~$*.xls*
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
 
-# Excel Backup File
-*.xlk
+# Fortran module files
+*.mod
+*.smod
 
-# PowerPoint temporary
-~$*.ppt*
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
 
-# Visio autosave temporary files
-*.~vsd*
-
-### Windows ###
-# Windows thumbnail cache files
-Thumbs.db
-Thumbs.db:encryptable
-ehthumbs.db
-ehthumbs_vista.db
-
-# Dump file
-*.stackdump
-
-# Folder config file
-[Dd]esktop.ini
-
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Windows Installer files
-*.cab
-*.msi
-*.msix
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
+# Executables
+*.exe
+*.out
+*.app
 
 ### VisualStudio ###
 ## Ignore Visual Studio temporary files, build results, and
@@ -125,9 +112,7 @@ StyleCopReport.xml
 *_h.h
 *.ilk
 *.meta
-*.obj
 *.iobj
-*.pch
 *.pdb
 *.ipdb
 *.pgc
@@ -137,6 +122,7 @@ StyleCopReport.xml
 *.tlb
 *.tli
 *.tlh
+*.tmp
 *.tmp_proj
 *_wpftmp.csproj
 *.log
@@ -436,6 +422,11 @@ FodyWeavers.xsd
 .history/
 
 # Windows Installer files from build outputs
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
 
 # JetBrains Rider
 *.sln.iml
@@ -443,4 +434,4 @@ FodyWeavers.xsd
 ### VisualStudio Patch ###
 # Additional files built by Visual Studio
 
-# End of https://www.toptal.com/developers/gitignore/api/windows,visualstudio,microsoftoffice
+# End of https://www.toptal.com/developers/gitignore/api/c++,visualstudio
