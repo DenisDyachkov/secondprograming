@@ -27,7 +27,7 @@ miit::figure::Point::Point(const double user_x, const double user_y)
 
  bool miit::figure::operator==(const Point& lhs, const Point& rhs)
 {
-	return (miit::math::equal_doubles(lhs.x, rhs.x) && miit::math::equal_doubles(lhs.x, rhs.y));
+	return (miit::math::equal_doubles(lhs.x, rhs.x) && miit::math::equal_doubles(lhs.y, rhs.y));
 }
 
 bool miit::figure::operator!=(const Point& lhs, const Point& rhs)

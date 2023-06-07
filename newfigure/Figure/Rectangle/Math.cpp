@@ -1,6 +1,6 @@
 #include "Math.h"
 #include <cmath>
-bool miit::math::equal_doubles(double lhs, double rhs)
+bool miit::math::equal_doubles(const double lhs, const double rhs)
 {
-    return std::abs(lhs - rhs) < 0.00001;;
+    return std::abs(lhs - rhs) < std::numeric_limits<double>::min();
 }

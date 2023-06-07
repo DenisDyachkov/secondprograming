@@ -11,8 +11,8 @@ namespace miit::figure
 	public:
 		Point(const double user_x = 0.0, const double user_y= 0.0);
 		double get_x() const;
-		 double get_y() const;
-		 friend std::ostream& operator<< (std::ostream& os, const Point& point);
+		double get_y() const;
+	    friend std::ostream& operator<< (std::ostream& os, const Point& point);
 		friend bool operator ==(const Point& lhs, const Point& rhs);
 		friend bool operator !=(const Point& lhs, const Point& rhs);
 	private:
