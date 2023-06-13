@@ -397,10 +397,6 @@ ASALocalRun/
 
 # Visual Studio History (VSHistory) files
 .vshistory/
-*.vcxproj
-*.vcxproj.proj
-*.vcxproj.filters
-*.sln
 
 # BeatPulse healthcheck temp database
 healthchecksdb
